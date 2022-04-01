@@ -2,7 +2,7 @@ body {
   font-family: "Merriweather", serif;
   font-size: 1.5rem ;
   line-height: 1.5rem;
-  margin: 0;
+  margin: 1rem;
 }
 
 img {
@@ -10,5 +10,24 @@ img {
 }
 
 header {
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+h1, h2, h3, {
+  margin: 1.5rem;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+
+main {
+  display: grid;
+  grid-template-columns: .75rem .75rem .75rem;
+  grid-template-areas:
+   "banner banner banner"
+   "col1 col2 col3"
+   "col4 col5 col6";
+}
+
+.banner-img {
+  grid-area: banner;
 }
